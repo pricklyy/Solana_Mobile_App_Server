@@ -54,9 +54,9 @@ app.set('view engine', 'ejs');
 // console.log("Views directory:", app.get('views'));
 
 const authRouter = require('./routes/auth');
-const categoryRouter = require('./routes/level');
+const LevelRouter = require('./routes/level');
 const questionRouter = require('./routes/question');
-const testRouter = require('./routes/mission');
+const MissionRouter = require('./routes/mission');
 
 //api o fday
 const apiAuthRouter = require('./routes/api/api.auth');
@@ -67,9 +67,9 @@ const apiCapchaRouter = require('./routes/api/api.capcha');
 const apiHelpRouter = require('./routes/api/api.help');
 
 app.use('/', authRouter);
-app.use('/category', categoryRouter);
+app.use('/category', LevelRouter);
 app.use('/question', questionRouter);
-app.use('/test', testRouter);
+app.use('/test', MissionRouter);
 
 //api o fday
 app.use('/api', apiAuthRouter);

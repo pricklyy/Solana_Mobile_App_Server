@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const testController = require('../controllers/testController');
+const testController = require('../controllers/missionController');
 const sessionMiddleware = require('../middleware/sessionMiddleware');
 
 // Middleware để kiểm tra session
