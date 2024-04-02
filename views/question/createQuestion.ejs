@@ -208,16 +208,16 @@
         <div class="main p-3">
             <div class="text-center">
                 <h1>
-                    Create Question
+                    Tạo
                 </h1>
 
                 <form id="createQuestionForm" class="mt-3">
                     <div class="form-group">
-                        <label for="content">Content:</label>
+                        <label for="content">Nội dung câu hỏi</label>
                         <textarea id="content" name="content" class="form-control" rows="3" required></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="category">Category:</label>
+                        <label for="category">Mức độ</label>
                         <select id="category" name="category" class="form-control" required>
                             <% categories.forEach(category=> { %>
                                 <option value="<%= category._id %>">
@@ -233,12 +233,12 @@
                                 required></textarea>
                             <label for="correct1">Correct:</label>
                             <select id="correct1" name="correct1" class="form-control" required>
-                                <option value="true">True</option>
+                                <option value="true" >True</option>
                                 <option value="false">False</option>
                             </select>
                         </div>
                     </div>
-                    <button type="button" onclick="addAnswer()" class="btn btn-primary">Add Answer</button>
+                    <button type="button" onclick="addAnswer()" class="btn btn-primary">Thêm câu hỏi</button>
                     <button type="button" onclick="createQuestion()" class="btn btn-success">Create</button>
                 </form>
             </div>

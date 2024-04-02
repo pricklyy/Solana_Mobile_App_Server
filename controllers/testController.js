@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Test = require('../models/Test');
+const Test = require('../models/mission');
 const Question = require('../models/question');
-const Category = require('../models/Category');
+const Category = require('../models/level');
 
 module.exports = {
     renderQuestionList: async (req, res) => {

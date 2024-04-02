@@ -20,12 +20,12 @@ app.use(cors());
 dotenv.config();
 
 app.use(session({
-    secret: 'giangtt653',
+    secret: 'venh22',
     resave: false,
     saveUninitialized: true
 }));
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+// app.use(favicon(__dirname + '/public/favicon.ico'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -54,13 +54,13 @@ app.set('view engine', 'ejs');
 // console.log("Views directory:", app.get('views'));
 
 const authRouter = require('./routes/auth');
-const categoryRouter = require('./routes/category');
+const categoryRouter = require('./routes/level');
 const questionRouter = require('./routes/question');
-const testRouter = require('./routes/test');
+const testRouter = require('./routes/mission');
 
 //api o fday
 const apiAuthRouter = require('./routes/api/api.auth');
-const apiTestRouter = require('./routes/api/api.testt');
+const apiTestRouter = require('./routes/api/api.mission');
 const apiScoreRouter = require('./routes/api/api.score');
 const apiRankRouter = require('./routes/api/api.rank');
 const apiCapchaRouter = require('./routes/api/api.capcha');
