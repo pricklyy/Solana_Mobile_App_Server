@@ -11,7 +11,7 @@ const TestSchema = new mongoose.Schema({
   },
   category: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Category',
+    ref: 'Level',
     required: true,
   },
   questions: [{
@@ -20,4 +20,4 @@ const TestSchema = new mongoose.Schema({
   }],
 });
 
-module.exports = mongoose.model('Test', TestSchema);
+module.exports = mongoose.model('Mission', TestSchema);
